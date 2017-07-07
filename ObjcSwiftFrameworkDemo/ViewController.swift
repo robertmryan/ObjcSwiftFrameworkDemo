@@ -7,19 +7,37 @@
 //
 
 import UIKit
+import FooBarKit
 
 class ViewController: UIViewController {
 
+    lazy var foo = Foo()
+    lazy var bar = Bar()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        foo.delegate = self
+        foo.performTask()
+        
+        bar.delegate = self
+        bar.performTask()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+    
 }
 
+extension ViewController: FooDelegate {
+    
+    func didFoo() {
+        NSLog("foo")
+    }
+    
+}
+
+extension ViewController: BarDelegate {
+    
+    func didBar() {
+        NSLog("bar")
+    }
+    
+}

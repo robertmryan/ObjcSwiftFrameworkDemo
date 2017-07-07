@@ -12,7 +12,37 @@
 		835546DD1F10122A00F1AEDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 835546DB1F10122A00F1AEDF /* Main.storyboard */; };
 		835546DF1F10122A00F1AEDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 835546DE1F10122A00F1AEDF /* Assets.xcassets */; };
 		835546E21F10122A00F1AEDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 835546E01F10122A00F1AEDF /* LaunchScreen.storyboard */; };
+		835546F21F10124000F1AEDF /* FooBarKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 835546F01F10124000F1AEDF /* FooBarKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		835546F51F10124000F1AEDF /* FooBarKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835546EE1F10124000F1AEDF /* FooBarKit.framework */; };
+		835546F61F10124000F1AEDF /* FooBarKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 835546EE1F10124000F1AEDF /* FooBarKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		835546FE1F10126100F1AEDF /* Bar.h in Headers */ = {isa = PBXBuildFile; fileRef = 835546FB1F10126100F1AEDF /* Bar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		835546FF1F10126100F1AEDF /* Bar.m in Sources */ = {isa = PBXBuildFile; fileRef = 835546FC1F10126100F1AEDF /* Bar.m */; };
+		835547001F10126100F1AEDF /* Foo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835546FD1F10126100F1AEDF /* Foo.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		835546F31F10124000F1AEDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 835546CC1F10122A00F1AEDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 835546ED1F10124000F1AEDF;
+			remoteInfo = FooBarKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		835546FA1F10124000F1AEDF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				835546F61F10124000F1AEDF /* FooBarKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		835546D41F10122A00F1AEDF /* ObjcSwiftFrameworkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjcSwiftFrameworkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +52,25 @@
 		835546DE1F10122A00F1AEDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		835546E11F10122A00F1AEDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		835546E31F10122A00F1AEDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		835546EE1F10124000F1AEDF /* FooBarKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FooBarKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		835546F01F10124000F1AEDF /* FooBarKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FooBarKit.h; sourceTree = "<group>"; };
+		835546F11F10124000F1AEDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		835546FB1F10126100F1AEDF /* Bar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bar.h; sourceTree = "<group>"; };
+		835546FC1F10126100F1AEDF /* Bar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bar.m; sourceTree = "<group>"; };
+		835546FD1F10126100F1AEDF /* Foo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Foo.swift; sourceTree = "<group>"; };
+		835547011F10146500F1AEDF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		835546D11F10122A00F1AEDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				835546F51F10124000F1AEDF /* FooBarKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		835546EA1F10124000F1AEDF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,7 +83,9 @@
 		835546CB1F10122A00F1AEDF = {
 			isa = PBXGroup;
 			children = (
+				835547011F10146500F1AEDF /* README.md */,
 				835546D61F10122A00F1AEDF /* ObjcSwiftFrameworkDemo */,
+				835546EF1F10124000F1AEDF /* FooBarKit */,
 				835546D51F10122A00F1AEDF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				835546D41F10122A00F1AEDF /* ObjcSwiftFrameworkDemo.app */,
+				835546EE1F10124000F1AEDF /* FooBarKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,7 +112,31 @@
 			path = ObjcSwiftFrameworkDemo;
 			sourceTree = "<group>";
 		};
+		835546EF1F10124000F1AEDF /* FooBarKit */ = {
+			isa = PBXGroup;
+			children = (
+				835546F01F10124000F1AEDF /* FooBarKit.h */,
+				835546FB1F10126100F1AEDF /* Bar.h */,
+				835546FC1F10126100F1AEDF /* Bar.m */,
+				835546FD1F10126100F1AEDF /* Foo.swift */,
+				835546F11F10124000F1AEDF /* Info.plist */,
+			);
+			path = FooBarKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		835546EB1F10124000F1AEDF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				835546FE1F10126100F1AEDF /* Bar.h in Headers */,
+				835546F21F10124000F1AEDF /* FooBarKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		835546D31F10122A00F1AEDF /* ObjcSwiftFrameworkDemo */ = {
@@ -74,15 +146,35 @@
 				835546D01F10122A00F1AEDF /* Sources */,
 				835546D11F10122A00F1AEDF /* Frameworks */,
 				835546D21F10122A00F1AEDF /* Resources */,
+				835546FA1F10124000F1AEDF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				835546F41F10124000F1AEDF /* PBXTargetDependency */,
 			);
 			name = ObjcSwiftFrameworkDemo;
 			productName = ObjcSwiftFrameworkDemo;
 			productReference = 835546D41F10122A00F1AEDF /* ObjcSwiftFrameworkDemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		835546ED1F10124000F1AEDF /* FooBarKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 835546F71F10124000F1AEDF /* Build configuration list for PBXNativeTarget "FooBarKit" */;
+			buildPhases = (
+				835546E91F10124000F1AEDF /* Sources */,
+				835546EA1F10124000F1AEDF /* Frameworks */,
+				835546EB1F10124000F1AEDF /* Headers */,
+				835546EC1F10124000F1AEDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FooBarKit;
+			productName = FooBarKit;
+			productReference = 835546EE1F10124000F1AEDF /* FooBarKit.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -97,6 +189,12 @@
 					835546D31F10122A00F1AEDF = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = UZAPXQTVQ4;
+						ProvisioningStyle = Automatic;
+					};
+					835546ED1F10124000F1AEDF = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = UZAPXQTVQ4;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -115,6 +213,7 @@
 			projectRoot = "";
 			targets = (
 				835546D31F10122A00F1AEDF /* ObjcSwiftFrameworkDemo */,
+				835546ED1F10124000F1AEDF /* FooBarKit */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +229,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		835546EC1F10124000F1AEDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -142,7 +248,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		835546E91F10124000F1AEDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				835547001F10126100F1AEDF /* Foo.swift in Sources */,
+				835546FF1F10126100F1AEDF /* Bar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		835546F41F10124000F1AEDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 835546ED1F10124000F1AEDF /* FooBarKit */;
+			targetProxy = 835546F31F10124000F1AEDF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		835546DB1F10122A00F1AEDF /* Main.storyboard */ = {
@@ -262,6 +385,7 @@
 		835546E71F10122A00F1AEDF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UZAPXQTVQ4;
 				INFOPLIST_FILE = ObjcSwiftFrameworkDemo/Info.plist;
@@ -275,6 +399,7 @@
 		835546E81F10122A00F1AEDF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UZAPXQTVQ4;
 				INFOPLIST_FILE = ObjcSwiftFrameworkDemo/Info.plist;
@@ -282,6 +407,53 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.robertmryan.ObjcSwiftFrameworkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		835546F81F10124000F1AEDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = UZAPXQTVQ4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FooBarKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robertmryan.FooBarKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		835546F91F10124000F1AEDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = UZAPXQTVQ4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FooBarKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robertmryan.FooBarKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -302,6 +474,14 @@
 			buildConfigurations = (
 				835546E71F10122A00F1AEDF /* Debug */,
 				835546E81F10122A00F1AEDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		835546F71F10124000F1AEDF /* Build configuration list for PBXNativeTarget "FooBarKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				835546F81F10124000F1AEDF /* Debug */,
+				835546F91F10124000F1AEDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
